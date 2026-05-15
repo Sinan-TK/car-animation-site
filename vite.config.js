@@ -13,16 +13,11 @@ function copyFrames() {
       if (existsSync(source)) {
         cpSync(source, destination, { recursive: true });
       }
-    }
+    },
   };
 }
 
 export default defineConfig({
   plugins: [react(), copyFrames()],
-  server: {
-    port: 6001,
-    allowedHosts: ['karyn-groutiest-proximally.ngrok-free.dev']
-  },
-  preview: { port: 6001 }
+  base: "/scroll-web/",
 });
-
