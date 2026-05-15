@@ -1,8 +1,11 @@
 {
+   "homepage": "https://sinan-tk.github.io/car-animation-site",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
@@ -11,5 +14,8 @@
     "react-dom": "latest",
     "sharp": "^0.34.5",
     "vite": "latest"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
