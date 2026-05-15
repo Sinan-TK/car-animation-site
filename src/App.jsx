@@ -9,7 +9,7 @@ import {
 
 const TOTAL_FRAMES = 240;
 const framePath = (index) =>
-  `/frames/ezgif-frame-${String(index).padStart(3, "0")}.webp`;
+  `/car-animation-site/frames/ezgif-frame-${String(index).padStart(3, "0")}.webp`;
 
 const detailScenes = [
   {
