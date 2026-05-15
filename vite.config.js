@@ -19,5 +19,5 @@ function copyFrames() {
 
 export default defineConfig({
   plugins: [react(), copyFrames()],
-  base: "/scroll-web/",
+  base: "/car-animation-site/",
 });
